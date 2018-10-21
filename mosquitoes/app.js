@@ -12,7 +12,7 @@ var elevationApi = require('google-elevation-api');
 
 var forecast = new Forecast({
   service: 'darksky',
-  key: '945f42b1dfc48a9ed081021eb2d67476',
+  key: 'api-ke',
   units: 'celcius',
   cache: true,      
   ttl: {            
@@ -28,7 +28,7 @@ weather.setLang('en');
 
 weather.setUnits('metric');
 
-weather.setAPPID('1adb2876ded70960e7380da96f4ec0de');
+weather.setAPPID('apiid');
 app.set('views', path.join(__dirname, 'views'));
 
 //app.use(express.static(path.join(__dirname, 'public')));
@@ -73,7 +73,7 @@ function postit(req, res ,next) {
           if(err) return console.dir(err);
 
           elevationApi({
-            key: 'AIzaSyCvAaogsW8U9WyxPjdBrGMEluyRMZEo4X4',
+            key: 'api-key',
             locations: [
                 [req.body.la,req.body.lo]
             ]
