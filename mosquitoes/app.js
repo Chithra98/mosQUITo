@@ -12,7 +12,7 @@ var elevationApi = require('google-elevation-api');
 
 var forecast = new Forecast({
   service: 'darksky',
-  key: 'api-ke',
+  key: 'api-key',
   units: 'celcius',
   cache: true,      
   ttl: {            
