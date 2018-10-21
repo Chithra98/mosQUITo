@@ -174,7 +174,7 @@ app.get('/predict', async function(req,res){
       if(results[0]=="[0]")
       {
         objs.mos = "Aedes";
-        objs.disease = "Once in the human body, malaria parasites migrate to the liver, where they grow and multiply. Eventually the parasites move into the blood stream to continue developing in red blood cells. As they multiply and are released, they destroy the blood cells.Quinine and other anti-malarial drugs cure patients by attacking the parasites in the blood."
+        objs.disease = "Dengue fever"
 
       }
       else if(results[0]=="[1]")
@@ -186,20 +186,18 @@ app.get('/predict', async function(req,res){
       else if(results[0]=="[2]")
       {
         objs.mos = "Armigeres";
-        objs.disease = "The West Nile virus multiplies in the human blood stream and is carried to the brain, where it begins to affect the central nervous system and causes inflammation of brain tissue, known as encephalitis. If this happens, a person will develop high fever, headaches, swollen lymph nodes and stiff neck.In the most severe cases, the infection can lead to convulsions, coma and death. Even if a severely infected person survives, there is a good chance of permanent neurological damage.There is no specific treatment of West Nile virus."
+        objs.disease = "Filariasis"
 
       }
       else if(results[0]=="[3]"){
 
         objs.mos = "Culex";
-        objs.disease = "Another infection caused by one of four viruses common to tropical and subtropical climates. The disease is spread by Aedes mosquitoes in much the same way as West Nile and other encephalitic viruses. A mosquito is able to transmit dengue about a week after biting an infected person.Like most viruses, there is no specific treatment. Doctors recommend acetaminophen, plenty of fluids and rest for dengue and hospitalization for hemorrhagic fever."
-
+        objs.disease = " The West Nile Virus "
 
       }
       else{
         objs.mos = "Toxorhynchites";
-        objs.disease = "Another infection caused by one of four viruses common to tropical and subtropical climates. The disease is spread by Aedes mosquitoes in much the same way as West Nile and other encephalitic viruses. A mosquito is able to transmit dengue about a week after biting an infected person.Like most viruses, there is no specific treatment. Doctors recommend acetaminophen, plenty of fluids and rest for dengue and hospitalization for hemorrhagic fever."
-
+        objs.disease = "Dengue fever ";
       }
       
       }
